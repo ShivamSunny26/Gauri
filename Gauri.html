@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Gauri
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      color: #0d448c;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Algerian', sans-serif;
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(
+      to right, #640caf, #1f0b82
+      );
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #85027b;
+      color: white;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+    }
+
+    button:hover{
+      background-color: #a02fb5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Would you like to be my <b>Soulmate</b></h1>
+  <div id="buttons">
+    <button class=button id="yesBtn"> Yes </button>
+    <button class=button id="noBtn"> No </button>
+  </div>
+  <script>
+  document.getElementById("yesBtn").onclick = function(){
+    window.location.href = "next.html";
+  };
+
+  document.getElementById("noBtn").onclick = function(){
+    alert("Thank You");
+    setTimeout(function(){
+      window.close();
+    }, 50);
+  };
+</script>
+</body>
+</html>
